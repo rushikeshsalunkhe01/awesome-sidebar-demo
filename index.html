@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Web with Font Awesome</title>
+    <!-- Font Awesome CDN -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Sidebar -->
+    <div class="sidebar" id="sidebar">
+        <button class="close-btn" id="closeBtn"><i class="fas fa-times"></i></button>
+        <h2>Sidebar Menu</h2>
+        <ul class="menu-list">
+            <li><a href="#"><i class="fas fa-home"></i> Home</a></li>
+            <li><a href="#"><i class="fas fa-info-circle"></i> About</a></li>
+            <li><a href="#"><i class="fas fa-envelope"></i> Contact</a></li>
+            <li><a href="#"><i class="fas fa-cogs"></i> Services</a></li>
+        </ul>
+    </div>
+
+    <!-- Main Content -->
+    <div class="main-content">
+        <button class="open-btn" id="openBtn"><i class="fas fa-bars"></i> Open Sidebar</button>
+        <h1>Welcome to My Web Page</h1>
+        <p>This web page uses Font Awesome icons to demonstrate the usage of an open and close sidebar button.</p>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2024 My Simple Web. All Rights Reserved.</p>
+    </footer>
+
+    <!-- JavaScript for open/close sidebar functionality -->
+    <script>
+        // Get references to DOM elements
+        const openBtn = document.getElementById('openBtn');
+        const closeBtn = document.getElementById('closeBtn');
+        const sidebar = document.getElementById('sidebar');
+
+        // Open the sidebar when the open button is clicked
+        openBtn.addEventListener('click', () => {
+            sidebar.style.width = '250px'; // Expand sidebar width
+            openBtn.style.display = 'none'; // Hide the open button
+        });
+
+        // Close the sidebar when the close button is clicked
+        closeBtn.addEventListener('click', () => {
+            sidebar.style.width = '0'; // Collapse sidebar width
+            openBtn.style.display = 'block'; // Show the open button again
+        });
+    </script>
+
+</body>
+</html>

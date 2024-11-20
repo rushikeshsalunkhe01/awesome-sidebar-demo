@@ -1,0 +1,84 @@
+/* General Reset */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f8f8f8;
+}
+
+/* Sidebar Styles */
+.sidebar {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #333;
+    color: white;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.sidebar .close-btn {
+    color: white;
+    font-size: 30px;
+    position: absolute;
+    top: 20px;
+    right: 25px;
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+
+.sidebar h2 {
+    color: white;
+    margin-left: 20px;
+}
+
+.menu-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.menu-list li {
+    padding: 10px 20px;
+    border-bottom: 1px solid #444;
+}
+
+.menu-list li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.menu-list li a:hover {
+    color: #1abc9c;
+}
+
+/* Main Content */
+.main-content {
+    padding: 20px;
+    margin-left: 20px;
+}
+
+.open-btn {
+    font-size: 20px;
+    cursor: pointer;
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    position: fixed;
+    top: 20px;
+    left: 20px;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #333;
+    color: white;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
